@@ -50,8 +50,8 @@ myConstante = 30; /!\ Cela déclanchera une erreur => Impossible de modifier une
 
 let myLet = 10; // Nouvelle version, accessible uniquement dans le bloc où elle est déclarée
 myLet = 20; // On peut modifier la valeur de la variable
-
 ```
+
 
 ## Types de données
 Les variables peuvent contenir différents types de données en JavaScript. <br />
@@ -306,4 +306,51 @@ switch (variable) {
 }
 // code à exécuter dans tous les cas
 ```
+
+## Boucles 
+Les boucles permettent d'exécuter du code plusieurs fois. <br />
+Retrouvez ci-dessous les principales boucles natives en JavaScript. <br />
+
+### for 
+La boucle `for` permet d'exécuter du code un nombre de fois défini à l'avance. <br />
+```javascript
+for (let i = 0; i < 10; i++) {
+    // code à exécuter
+}
+```
+Dans cette exemple, la boucle va s'exécuter 10 fois, i prendra les valeurs de 0 à 9 car on continue la boucle tant que i est inférieur à 10.<br />
+
+### while
+La boucle `while` permet d'exécuter du code tant qu'une condition est vraie. <br />
+```javascript
+let counter = 0
+while (counter < 10) {
+    // code à exécuter
+    counter++; // Ne pas oublier d'incrémenter counter pour que à un moment donnée counter soit supérieur à 10 et que la boucle s'arrête. Cela évitera une boucle infinie
+}
+```
+
+### do ... while
+La boucle `do ... while` permet d'exécuter du code au moins une fois et tant qu'une condition est vraie. <br />
+```javascript
+let counter = 0;
+do {
+    // code à exécuter
+    counter++; // Ne pas oublier d'incrémenter counter pour que à un moment donnée counter soit supérieur à 10 et que la boucle s'arrête. Cela évitera une boucle infinie
+} while (counter < 10);
+```
+
+## Objets
+
+## Tableaux
+
+## Boucles
+
+## Fonctions
+
+## Manipulation du DOM
+
+## Evénements
+
+## Classes
 
