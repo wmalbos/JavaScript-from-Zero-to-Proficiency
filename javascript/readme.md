@@ -125,6 +125,15 @@ On retrouve souvent ce type lorsque l'on cherche à utiliser une variable qui n'
 let myUndefined = undefined;
 ```
 
+### Debugging - Console
+Il est possible d'afficher l'état des variables dans la console de l'inspecteur du navigateur.<br/>
+Ne pas hésiter à faire régulièrement des `console.log` pour connaitre l'état du programme et aider au debug.
+
+```javascript
+let myVariable = "Hello World";
+console.log(myVariable) // Affiche "Hello World" dans la console
+```
+
 ### Opérateurs
 #### Opérateurs arithmétiques
 L'addition `+` permet d'additionner deux nombres (ou de concaténer deux chaînes de caractères). <br />
@@ -584,5 +593,36 @@ for(let i = 0; i < btnOtherList.length; i++) {
     });
 }
 ```
+
+## Récupérer des informations externes - Fetch
+
+```javascript 
+fetch('https://jsonplaceholder.org/posts') // Effectue la demande d'informations via l'API
+  .then(response => response.json()) // Réception de la réponse dans la variable "response" et transfer le body dans le then suivant
+  .then(json => { // Les données reçues sont stockées dans la variable "json"  
+      // Code à executer
+      console.log(json)
+  });
+```
+
+
 ## Classes
 
+
+
+## Méthodes diverses
+
+### Timers
+```javascript
+let timeBeforeExecution = 1000;
+setTimeout(() => {
+    // Code à executer après 1000ms 
+}, timeBeforeExecution);
+```
+
+```javascript
+let timeInterval = 1000;
+setInterval(() => {
+    // Code à executer toutes les 1000ms 
+}, timeInterval);
+```
