@@ -642,15 +642,16 @@ setInterval(() => {
 ## Bonnes pratiques
 
 ### Nomenclature
-Utiliser des noms de variables prononçables et explicites
+#### Utiliser des noms de variables prononçables et explicites :
 ```javascript
 // Mauvais
 const a = 10;
+
 // Bon
 const currentSlide = 0;
 ```
 
-Rester consistant dans le nommage
+#### Rester consistant dans la manière de nommer :
 ```javascript
 // Mauvais
 getUserData();
@@ -662,9 +663,9 @@ getUserData();
 getUserRecord();
 getUserName();
 ```
-> **Astuce :**<br/> Commencer le début du nom par la partie "générique" ici `getUser` et la terminer par l'informations précise de la fonction ici `Data`, `Record` ou `Name`. Ainsi, lorsque l'on commence à taper `getUser` notre IDE sera capable de proposer rapidement et simplement toutes les fonctions qui commencent par `getUser`
+> **Astuce :**<br/> Commencer le début du nom par la partie "générique" ici `getUser` et la terminer par l'information précise de la fonction ici `Data`, `Record` ou `Name`. Ainsi, lorsque l'on commence à taper `getUser` notre IDE sera capable de proposer rapidement et simplement toutes les fonctions qui commencent par `getUser`
 
-Utiliser des noms recherchable et éviter les constantes magiques.<br />
+#### Utiliser des noms recherchable et éviter les constantes magiques.<br />
 Une `constante magique` est une valeur qui apparait dans le code sans savoir à quoi elle correspond précisément.  
 ```javascript
 
