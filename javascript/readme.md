@@ -1,5 +1,8 @@
 # JavaScript
 
+Retrouver ci-dessous une petite liste des principales notions à connaitre en JavaScript.<br/>
+Et quelques recommandations pour bien commencer à coder en JavaScript.
+
 ## Sommaire
 1. [Introduction](#introduction)
 2. [Commentaires](#commentaires)
