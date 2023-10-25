@@ -14,8 +14,9 @@
 11. [Manipulation du DOM](#manipulation-du-dom)
 12. [Fonctions](#fonctions)
 13. [Evénements](#événements)
-14. [Classes](#classes)
-15. [Méthodes diverses](#méthodes-diverses)
+14. [Récupérer des informations externes - Fetch](#récupérer-des-informations-externes---fetch)
+15. [Classes](#classes)
+16. [Méthodes diverses](#méthodes-diverses)
 
 
 ## Introduction
