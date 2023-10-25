@@ -1,43 +1,4 @@
 
-
-
-// Null
-let myNull = null;
-
-// Undefined
-let myUndefined = undefined;
-
-// Array
-let myArray1 = [1, 2, 3, 4, 5];
-let myArray2 = ["Hello", "World", "Test"];
-let myArray3 = [1, "Hello", true, null, undefined, [1, 2, 3]]; // à éviter
-
-// /!\ ATTENTION /!\ Un tableau commence toujours par l'index 0 !!!
-
-
-// Object { clé : valeur }
-let myObject1 = {
-    prenom : "John",
-    nom : "Doe",
-    age : 30,
-    isAdult : true,
-    objectImbrique : {
-        prenom : 'Bob'
-    },
-    childrens : [
-
-    ],
-}
-
-console.log(myObject1);
-console.log(myObject1.nom);
-console.log(myObject1.objectImbrique.prenom);
-console.log(myObject1['nom']);
-
-let myKey = 'nom';
-console.log(myObject1[myKey]);
-console.log(myObject1.myKey); // undefined
-
 /**
  * Opérateurs
  */
@@ -58,11 +19,6 @@ myNumber /= 10; // 13
 
 
 
-
-// Opérateurs de concaténation
-/*
-    + Concaténation "Hello" + "World" => "HelloWorld" // "Hello " + "World" => "Hello World"
- */
 
 /**
  * Conditions : condition doit être un boolean (true ou false)

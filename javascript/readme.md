@@ -290,6 +290,16 @@ if(condition_1) {
 // code à exécuter dans tous les cas
 ```
 
+#### Ternaire
+La condition `ternaire` permet d'exécuter du code si la condition est vraie et un autre code si la condition est fausse. <br />
+Elle permet d'écrire une condition sur une seule ligne. <br />
+Attention, à ne pas abuser de cette structure car elle peut rendre le code illisible. <br />
+```javascript
+condition ? code_si_vrai : code_si_faux;
+
+(10 < 100 ? "10 est inférieur à 100" : "10 est supérieur à 100") // "10 est inférieur à 100"
+```
+
 #### switch ...
 La condition `switch` permet d'exécuter du code en fonction de la valeur d'une variable. On peux rajouter autant de `case`que nécessaire. <br />
 Cette structure permet d'améliorer la lisibilité du code lorsque l'on a beaucoup de conditions.<br />
@@ -310,8 +320,8 @@ switch (variable) {
 ## Tableaux
 Les tableaux sont des variables qui peuvent contenir plusieurs valeurs. <br />
 Les tableaux sont déclarés avec des crochets `[]` et les valeurs sont séparées par des virgules `,`. <br />
-Les tableaux sont des objets, ils ont donc des propriétés et des méthodes. <br />
-Attention, les index des tableaux commencent toujours à 0. <br />
+Les tableaux sont des objets, ils ont donc des `propriétés` et des `méthodes`. <br />
+Attention, les index des tableaux commencent toujours à `0`. <br />
 ```javascript
 let myArray = [1, 2, 3, 4, 5]; // tableau de nombres
 
@@ -330,7 +340,33 @@ console.log(myArray[currentIndex]); // affiche dynamiquement le deuxième élém
 
 
 ## Objets
+Les objets sont des variables qui peuvent contenir plusieurs types de valeurs. <br />
+Un objet est déclaré avec des accolades `{}` et représente une suite de `clé : valeur` <br />
+Les objets sont des objets, ils ont donc des `propriétés` et des `méthodes`. <br />
+```javascript
+let myObject = {
+    prenom : "John",
+    nom : "Doe",
+    age : 30,
+    isAdult : true,
+    objectImbrique : {
+        ville : 'Paris',
+        codePostal : 75000,
+    },
+    childrens : [
+        { prenom : 'Alice', age : 10},
+        { prenom : 'Bob', age : 25},
+    ],
+}
 
+console.log(myObject.prenom); // affiche la valeur de la propriété prénom - John
+console.log(myObject.objectImbrique.ville); // affiche la valeur de la propriété ville - Paris
+console.log(myObject.childrens[0].prenom); // affiche la valeur de la propriété prénom du premier enfant - Alice
+
+let myKey = "nom";
+console.log(myObject[myKey]); // affiche la valeur de la propriété nom - Doe
+console.log(myObject.myKey); // affiche undefined car la propriété myKey n'existe pas
+```
 
 ## Boucles 
 Les boucles permettent d'exécuter du code plusieurs fois. <br />
