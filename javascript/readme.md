@@ -5,15 +5,17 @@
 2. [Commentaires](#commentaires)
 3. [Variables](#variables)
 4. [Types de données](#types-de-données)
-5. [Opérateurs](#opérateurs)
-6. [Conditions](#conditions)
-7. [Objets](#objets)
+5. [Debugging - Console](#debugging---console)
+6. [Opérateurs](#opérateurs)
+7. [Conditions](#conditions)
 8. [Tableaux](#tableaux)
-9. [Boucles](#boucles)
-10. [Fonctions](#fonctions)
-11. [Manipulation du DOM](#dom)
-12. [Evénements](#événements)
-13. [Classes](#classes)
+9. [Objets](#objets)
+10. [Boucles](#boucles)
+11. [Manipulation du DOM](#manipulation-du-dom)
+12. [Fonctions](#fonctions)
+13. [Evénements](#événements)
+14. [Classes](#classes)
+15. [Méthodes diverses](#méthodes-diverses)
 
 
 ## Introduction
@@ -54,22 +56,24 @@ let myLet = 10; // Nouvelle version, accessible uniquement dans le bloc de {} o�
 myLet = 20; // On peut modifier la valeur de la variable après sa déclaration
 ```
 
-> **Astuce :** Ne pas hésiter à mettre un nom de variable précis pour améliorer la lisibilité du code. Plus le code se lit "en anglais" plus il est facile de le comprendre. Par exemple, `let a = 10`  n'est pas très lisible. En revanche avec `let currentSlide = 0` il est facile de comprendre que l'on parle de la slide actuellement utilisée.
+> **Astuce :**<br/>Ne pas hésiter à mettre un nom de variable précis pour améliorer la lisibilité du code. Plus le code se lit "en anglais" plus il est facile de le comprendre. Par exemple, `let a = 10`  n'est pas très lisible. En revanche avec `let currentSlide = 0` il est facile de comprendre que l'on parle de la slide actuellement utilisée.
 
 ## Types de données
 Les variables peuvent contenir différents types de données en JavaScript. <br />
-Les principaux types de données sont les suivants : <br />   
+Les principaux types de données les plus utilisés sont les suivants : <br />   
 
 #### 1- Chaînes de caractères
 Les guillemets doubles `"`et simples `'` permettent de déclarer un `string`.<br/>
-Attention, à bien utiliser le backslash`\` pour échapper les mêmes guillemets lorsqu'ils sont utilisés à l'intérieur de la chaîne de caractère.<br />
-Les `backsticks` eux permettent d'insérer des variables dans une chaîne de caractères. <br />
+Attention, à bien utiliser le backslash` \ ` pour échapper les mêmes guillemets lorsqu'ils sont utilisés à l'intérieur de la chaîne de caractère.<br />
+Les backticks ` `` `` eux permettent d'insérer des variables dans une chaîne de caractères. <br />
 
 ```javascript
 let myString1 = "Je suis \"mon truc\" l'élève une chaîne de caractères"; // guillemets double
 let myString2 = 'Je suis l\'eleve une "chaîne de caractères'; // guillemets simple
 let myString3 = `Je suis une chaîne de ${myVariable} caractères`; // backtick
 ```
+
+> **Astuce :**<br/>N'utilisez les backticks que lorsque l'on utilise des variables à l'intérieur de la chaîne de caractères, cela permettra de gagner en performances car JavaScript ne cherche pas à analyser le string pour savoir s'il y a une variable à l'intérieur.
 
 #### 2- Nombres
 Les `number` sont des variables qui peuvent contenir des nombres entiers ou décimaux. <br />
@@ -115,6 +119,8 @@ let myObject1 = {
 }
 ```
 
+> **Informations :**<br/> Le JSON (*JavaScript Object Notation*) est un format de données qui permet de représenter un objet en JavaScript. <br /> Il est extrêmement utilisé pour communiquer via des API (*avec des applications externes par exemple*). <br /> Il est très proche de la syntaxe JavaScript, la différence principale est qu'il n'y a pas de fonction dans un JSON. <br /> Il est donc très facile de convertir un JSON en objet JavaScript et inversement. <br />
+
 #### 6- Null
 Le type `null` est une valeur spéciale forte qui indique que la variable ne représente rien. <br />
 ```javascript
@@ -130,13 +136,13 @@ let myUndefined = undefined;
 
 ### Debugging - Console
 Il est possible d'afficher l'état des variables dans la console de l'inspecteur du navigateur.<br/>
-Ne pas hésiter à faire régulièrement des `console.log` pour connaitre l'état du programme et aider au debug.
 
 ```javascript
 let myVariable = "Hello World";
 console.log(myVariable) // Affiche "Hello World" dans la console
 ```
 
+> **Astuce :**<br/>Ne pas hésiter à faire régulièrement des `console.log` pour connaitre l'état du programme et aider au debug. Par la suite, on pourra utiliser des outils spéciaux dans notre IDE pour faciliter et accélerer le debug.
 ### Opérateurs
 #### Opérateurs arithmétiques
 L'addition `+` permet d'additionner deux nombres (ou de concaténer deux chaînes de caractères). <br />
