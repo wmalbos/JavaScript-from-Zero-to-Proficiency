@@ -17,7 +17,8 @@
 14. [Récupérer des informations externes - Fetch](#récupérer-des-informations-externes---fetch)
 15. [Classes](#classes)
 16. [Méthodes diverses](#méthodes-diverses)
-17. [Bonnes pratiques](#bonnes-pratiques)
+17. [Premières bonnes pratiques](#premières-bonnes-pratiques)
+18. [Nomenclature](#nomenclature)
 
 
 
@@ -639,7 +640,7 @@ setInterval(() => {
 }, timeInterval);
 ```
 
-## Bonnes pratiques
+## Premières bonnes pratiques
 
 ### Nomenclature
 #### Utiliser des noms de variables prononçables et explicites :
@@ -672,10 +673,49 @@ Une `constante magique` est une valeur qui apparait dans le code sans savoir à 
 let counterSteps = 0;
 
 // Mauvais
-if (counterSteps > 100) {} // à quoi correspondent x et 10 ??
+if (counterSteps > 100) {} // à quoi correspond 100 ??
 
 // Bon 
 let MAX_STEPS_PER_DAY = 100;
 if(counterSteps > MAX_STEPS_PER_DAY) {}
 ```
 
+#### Eviter l'effort mental
+```javascript
+const cities = ['Paris' , 'Lyon', 'Grenoble']
+
+// Mauvais
+cities.forEach(c => {
+    // Code à executer
+})
+
+// Bon 
+cities.forEach(city => {
+    // Code à executer
+})
+```
+
+> **Astuce :**<br/>Plus les noms sont explicites, moins nous avons d'efforts à faire pour lire le code.
+ 
+#### Eviter de rajouter du context si cela n'est pas nécessaire
+```javascript
+// Mauvais
+const user = {
+    userFirstName : 'John',
+    userLastName : 'Doe',
+    userAge : 30,
+    userIsAdult : true,
+}
+
+// Bon
+const user = {
+    firstName : 'John',
+    lastName : 'Doe',
+    age : 30,
+    isAdult : true,
+}
+```
+
+## Ressources
+
+- [JavaScript Clean Code - French](https://github.com/eugene-augier/clean-code-javascript-fr)
