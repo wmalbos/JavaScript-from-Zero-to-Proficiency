@@ -1,64 +1,5 @@
-/**
- * HTML : Hyper Text Markup Language - Language de balisage
- * - Structurer la page
- * - Effectuer le référencement
- *
- * CSS : Cascading Style Sheets - Feuilles de style en cascade
- * - Ajouter du design
- * - Rendre la page responsive
- *
- * JavaScript : Langage de programmation
- * - Ajouter de l'interactivité avec l'utilisation
- * - Ajouter de l'interaction avec d'autres sites / applications => API
- */
 
 
-/**
- * Commentaires : Le code sera ignoré par le navigateur, les commentaires sont uniquement pour les développeurs
- */
-
-// Commentaire sur une ligne
-
-/*
-    Commentaire sur plusieurs lignes
- */
-
-/**
- * JSDoc : Commentaire pour générer une documentation
- */
-
-
-/**
- * Variables :
- * - Permet de stocker des informations et les réutiliser plus tard
- * - Permet d'améliorer la lisibilité du code
- */
-
-var myVariable = 10; // Vielle version, accessible partout donc dangereux on ne l'utilise plus
-
-
-const myConstante = 10; // Constante, on ne peut pas la modifier après la déclaration
-// myConstante = 30; // Erreur
-
-let myLet = 10; // Nouvelle version, accessible uniquement dans le bloc où elle est déclarée
-
-/**
- * Types de variables
- */
-
-// Chaîne de caractères
-let isString1 = "Je suis \"mon truc\" l'élève une chaîne de caractères" + myConstante + " autre chaine"; // guillemets double
-let isString2 = 'Je suis l\'eleve une "chaîne de caractères"' + myConstante + ' autre chaine'; // guillemets simple
-let isString3 = `Je suis une chaîne de ${myVariable} caractères`; // backtick
-
-// Nombre
-let myNumber1 = -2; // Integer
-let myNumber2 = 10.0; // Float
-let myNumber3 = 10; // Number
-
-// Boolean
-let myBoolean1 = true;
-let myBoolean2 = false;
 
 // Null
 let myNull = null;
@@ -107,20 +48,7 @@ console.log(myObject1.myKey); // undefined
  * Opérateurs
  */
 
-// Opérateurs arithmétiques
-/*
-   + Addition 10 + 10 = 20
-   - Soustraction 10 - 10 = 0
-   * Multiplication 10 * 10 = 100
-   / Division 10 / 10 = 1 => Affiche la division entière
-   % Modulo 10 % 10 = 0 => Affiche le reste de la division entière => 11 % 10 = 1
-   ** Exposant 2 ** 2 = 4
- */
 
-// Opérateurs d'affectation
-/*
-    = Affectation myVariable1 = 10 => donc dans myVariable est stockée 10
- */
 
 // Opérateurs d'incrémentation / décrémentation
 let myNumber = 10;
@@ -134,26 +62,8 @@ myNumber -= 10; // 13
 myNumber *= 10; // 130
 myNumber /= 10; // 13
 
-// Opérateurs de comparaison
-/*
-    == Egalité => vérifier les valeurs entre elles par exemple, "10" == 10 => true
-    === Egalité stricte => vérifier les valeurs et les types entre eux par exemple, "10" === 10 => false
 
-    != Différence => vérifier les valeurs entre elles par exemple, "10" != 10 => false
-    !== Différence stricte => vérifier les valeurs et les types entre eux par exemple, "10" !== 10 => true
 
-    > Supérieur à => 10 > 9 => true
-    < Inférieur à => 10 < 9 => false
-    >= Supérieur ou égal à => 10 >= 10 => true
-    <= Inférieur ou égal à => 10 <= 10 => true
- */
-
-// Opérateurs logiques
-/*
-    && ET => true && true => true // true && false => false // false && false => false
-    || OU => true || true => true // true || false => true // false || false => false
-    ! NOT => !true => false // !false => true => !(!(!false)) => true
- */
 
 // Opérateurs de concaténation
 /*
