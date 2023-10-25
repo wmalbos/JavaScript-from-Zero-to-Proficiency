@@ -307,6 +307,31 @@ switch (variable) {
 // code à exécuter dans tous les cas
 ```
 
+## Tableaux
+Les tableaux sont des variables qui peuvent contenir plusieurs valeurs. <br />
+Les tableaux sont déclarés avec des crochets `[]` et les valeurs sont séparées par des virgules `,`. <br />
+Les tableaux sont des objets, ils ont donc des propriétés et des méthodes. <br />
+Attention, les index des tableaux commencent toujours à 0. <br />
+```javascript
+let myArray = [1, 2, 3, 4, 5]; // tableau de nombres
+
+console.log(myArray1); // affiche le tableau complet - [1, 2, 3, 4, 5]
+console.log(myArray1[0]); // affiche le premier élément du tableau - 1
+console.log(myArray1[2]); // affiche le troisième élément du tableau - 3
+console.log(myArray1[5]); // affiche undefined car le tableau ne contient pas d'élément à l'index 5
+```
+
+```javascript
+let myArray = ["Hello", "World", "Test"]; // tableau de chaînes de caractères
+let currentIndex = 1;
+
+console.log(myArray[currentIndex]); // affiche dynamiquement le deuxième élément du tableau - World
+```
+
+
+## Objets
+
+
 ## Boucles 
 Les boucles permettent d'exécuter du code plusieurs fois. <br />
 Retrouvez ci-dessous les principales boucles natives en JavaScript. <br />
@@ -342,11 +367,7 @@ do {
 } while (counter < 10); // condition d'arrêt
 ```
 
-## Objets
 
-## Tableaux
-
-## Boucles
 
 ## Fonctions
 

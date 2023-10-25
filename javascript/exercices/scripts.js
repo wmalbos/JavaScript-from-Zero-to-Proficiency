@@ -13,13 +13,7 @@ let myArray2 = ["Hello", "World", "Test"];
 let myArray3 = [1, "Hello", true, null, undefined, [1, 2, 3]]; // à éviter
 
 // /!\ ATTENTION /!\ Un tableau commence toujours par l'index 0 !!!
-console.log(myArray1);
-console.log(myArray1[0]);
-console.log(myArray1[2]);
-console.log(myArray1[5]); // undefined
 
-let arrayIndex = 1
-console.log(myArray1[arrayIndex]);
 
 // Object { clé : valeur }
 let myObject1 = {
