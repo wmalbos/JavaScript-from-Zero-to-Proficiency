@@ -717,4 +717,4 @@ const user = {
 
 ## Ressources
 
-- [JavaScript Clean Code - French](https://github.com/eugene-augier/clean-code-javascript-fr)
+- [JavaScript Clean Code - French](https://github.com/eugene-augier/clean-code-javascript-fr) - Principes d'ingénierie logicielle, du livre Clean Code de Robert C. Martin's adapté au JavaScript.
