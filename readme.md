@@ -1,0 +1,63 @@
+# Cheat Sheet et exerices
+
+## Sommaire
+- `HTML` - HyperText Markup Language
+  - [Cheat Sheet](./html/readme.md)
+  - [Exercices](./html/exercices/readme.md)
+- `CSS` - Cascading Style Sheets
+  - [Cheat Sheet](./css/readme.md)
+  - [Exercices](./css/exercices/readme.md)
+- `SASS` - Syntactically Awesome Style Sheets
+  - [Cheat Sheet](./sass/readme.md)
+  - [Exercices](./sass/exercices/readme.md)
+- `JS` - JavaScript
+  - [Cheat Sheet](./javascript/readme.md) - JavaScript
+  - [Cheat Sheet](./javascript/phaser/readme.md) - Phaser.js
+  - [Exercices](./javascript/exercices/readme.md)
+- `TYPESCRIPT`
+  - [Cheat Sheet](./typescript/readme.md)
+  - [Exercices](./typescript/exercices/readme.md)
+- `REACT`
+    - [Cheat Sheet](./react/readme.md)
+    - [Exercices](./react/exercices/readme.md)
+- `REACT NATIVE`
+    - [Cheat Sheet](./react_native/readme.md)
+    - [Exercices](./react_native/exercices/readme.md)
+- `NODEJS`
+  - [Cheat Sheet](./nodejs/readme.md)
+  - [Exercices](./nodejs/exercices/readme.md)
+- `PHP` - Hypertext Preprocessor
+  - [Cheat Sheet](./php/readme.md)
+  - [Exercices](./php/exercices/readme.md)
+- `SYMFONY`
+  - [Cheat Sheet](./symfony/readme.md)
+  - [Exercices](./symfony/exercices/readme.md)
+- `WORDPRESS`
+    - [Cheat Sheet](./wordpress/readme.md) 
+- `PYTHON`
+  - [Cheat Sheet](./python/readme.md) - Python
+  - [Cheat Sheet](./python/pygame/readme.md) - PyGame
+  - [Exercices](./python/exercices/readme.md)
+- `DJANGO`
+  - [Cheat Sheet](./django/readme.md)
+  - [Exercices](./django/exercices/readme.md)
+- `C#`
+  - [Cheat Sheet](./csharp/readme.md) - C#
+  - [Cheat Sheet](./csharp/monogame/readme.md) - MonoGame
+  - [Exercices](./csharp/exercices/readme.md)
+- `JAVA`
+  - [Cheat Sheet](./java/readme.md)
+  - [Exercices](./java/exercices/readme.md)
+- `LUA`
+    - [Cheat Sheet](./lua/readme.md) - Lua
+    - [Cheat Sheet](./lua/pygame/readme.md) - Löve2D
+    - [Exercices](./lua/exercices/readme.md)
+- `SQL` - Structured Query Language
+    - [Cheat Sheet](./sql/readme.md)
+    - [Exercices](./sql/exercices/readme.md)
+- `GIT` - Global Information Tracker
+    - [Cheat Sheet](./git/readme.md)
+    - [Exercices](./git/exercices/readme.md)
+- `DOCKER`
+  - [Cheat Sheet](./docker/readme.md)
+  - [Exercices](./docker/exercices/readme.md)
