@@ -35,23 +35,26 @@ Le développeur commente le code pour expliquer ce que l'on y fait et faciliter 
     */
     let myVariable = 1; /* Ceci est un commentaire sur plusieurs lignes */
 ```
+
+> **Astuce :** Lorsque l'on commence le développement, ne pas hésiter à beaucoup documenter son code pour améliorer sa capacité d'anyalse. Avec le temps, on améliorer son code et il "se lit tout seul" les commentaires sont donc moins nécessaires.
     
 ## Variables
 Les variables sont des espaces mémoires qui permettent de stocker des valeurs pour les réutiliser plus tard, autant de fois que nécessaire. <br />
-Elles sont déclarées avec le mot clé `var`, `let` ou `const` suivi du nom de la variable. <br />
+Elles sont déclarées avec le mot clé ~~`var`~~, `let` ou `const` suivi du nom de la variable. <br />
 Elles permettent également d'améliorer la lisibilité du code en donnant un nom à la valeur stockée. <br />
 
 ```javascript
-var myVariable = 10; // Vielle version, accessible partout donc dangereux on ne l'utilise plus
-myVariable = 20; // On peut modifier la valeur de la variable
+var myVariable = 10; // Vielle version, accessible partout donc dangereux et risque d'effet de bord, on ne l'utilise plus aujourd'hui
+myVariable = 20; // On peut modifier la valeur de la variable après sa déclaration
 
 const myConstante = 10; // Constante, on ne peut pas la modifier après la déclaration
-myConstante = 30; /!\ Cela déclanchera une erreur => Impossible de modifier une constante
+myConstante = 30; /!\ Cela déclanchera une erreur => Car il est impossible de modifier une constante
 
-let myLet = 10; // Nouvelle version, accessible uniquement dans le bloc où elle est déclarée
-myLet = 20; // On peut modifier la valeur de la variable
+let myLet = 10; // Nouvelle version, accessible uniquement dans le bloc de {} où elle est déclarée
+myLet = 20; // On peut modifier la valeur de la variable après sa déclaration
 ```
 
+> **Astuce :** Ne pas hésiter à mettre un nom de variable précis pour améliorer la lisibilité du code. Plus le code se lit "en anglais" plus il est facile de le comprendre. Par exemple, `let a = 10`  n'est pas très lisible. En revanche avec `let currentSlide = 0` il est facile de comprendre que l'on parle de la slide actuellement utilisée.
 
 ## Types de données
 Les variables peuvent contenir différents types de données en JavaScript. <br />
