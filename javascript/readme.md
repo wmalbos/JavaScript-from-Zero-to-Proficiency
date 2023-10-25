@@ -23,9 +23,10 @@
 
 
 ## Introduction
-`JavaScript` -> Langage de programmation<br/>
-- Ajouter de l'interactivité avec l'utilisation
-- Ajouter de l'interaction avec d'autres sites / applications => API
+Le `JavaScript` est un langage de programmation utilisé dans le développement web pour rendre les pages web interactives. <br />
+Il est utilisé pour créer des applications web, des applications mobiles, des jeux vidéos, des logiciels, ... <br />
+Il a été créé en `1995 par Brendan Eich` pour ajouter des fonctionnalités dynamiques aux pages web, de modifier le contenu de la page, valider des formulaires, envoyer des données sans rechargement de pages, etc... <br />
+
 
 ## Commentaires
 
