@@ -254,6 +254,25 @@ Attention a bien utiliser des espaces pour séparer les mots. <br />
 "Hello" + " " + "World" // "Hello World"
 ```
 
+#### Incrémentation / Décrémentation
+
+```javascript
+let myNumber = 10
+
+myNumber = myNumber + 1; // 11
+myNumber += 1; // 12 - On peut incrémenter de n'importe quel nombre
+myNumber++; // 13 - Uniquement pour une incrémentation de 1
+
+myNumber = myNumber - 1; // 12
+myNumber -= 1; // 11 - On peut décrémenter de n'importe quel nombre
+myNumber--; // 10 - Uniquement pour une décrémentation de 1
+
+// Mais aussi sur tous les autres opérateurs comme par exemple :
+myNumber *= 2;
+myNumber /= 2;
+```
+
+
 ### Conditions
 Les conditions permettent d'exécuter du code uniquement si une condition est vraie, c'est le début des algorithmes. <br />
 Une condition doit toujours être une expression qui retourne un booléen. <br />
@@ -405,11 +424,165 @@ do {
 
 
 
-## Fonctions
-
 ## Manipulation du DOM
+
+### Récupérer un élément du DOM
+Il existe plusieurs façons de récupérer un élément du DOM.<br />
+Les plus utilisées sont les suivantes : `getElementById`, `querySelector`, `querySelectorAll` <br />
+```javascript
+
+// Retourne un noeud unique
+const myContainer = document.getElementById("container"); // => Recupere l'element du DOM avec id="container"
+const myContainer2 = document.querySelector("#container"); // => Recupere l'element du DOM avec id="container"
+const myContainer3 = document.querySelector(".container"); // => Recupere l'element du DOM avec class="container"
+
+// Retourne une liste de noeuds dans une nodeList
+const myContainer4 = document.querySelectorAll(".container"); // => Recupere tous les elements du DOM avec class="container"
+```
+
+### Modifier un élément du DOM
+
+```javascript
+const myContainer5 = document.getElementById("container")
+
+myContainer5.innerHTML = "<h1>Hello World</h1>"; // => Modifie le contenu HTML de l'element du DOM avec id="container"
+myContainer5.innerText = "<h1>Hello World</h1>"; // => Modifie que le contenu textuel de l'element du DOM avec id="container"
+myContainer5.setAttribute("src", "newSrc/path"); // => Modifie l'attribut src de l'element du DOM avec id="container"
+```
+Voici une liste d'exemples d'attributs que l'on peut modifier avec la méthode `setAttribute` : <br />
+- src => Source d'une image
+- href => Lien d'un lien
+- class => Classe d'un element
+- id => Identifiant unique d'un element
+- alt => Texte alternatif d'une image
+- title => Titre d'un element
+- value => Valeur d'un element
+- placeholder => Placeholder d'un element
+- type => Type d'un element
+- data-truc => Attribut personnalisé nommé data-truc de l'element
+```javascript
+<img src="" alt="" title="">
+<div id="" class="" data-truc="">
+<input type="text" value="" placeholder="">
+<a href=""></a>
+```
+
+### Récupérer la valeur d'un attribut d'un noeud du DOM
+```javascript
+const data1 = myContainer5.getAttribute("src"); // => Recupere l'attribut src de l'element du DOM avec id="container"
+const data2 = myContainer5.getAttribute("data-src"); // => Recupere l'attribut data-src de l'element du DOM avec id="container"
+```
+
+### Modification des classes d'un noeud du DOM
+```javascript
+console.log(myContainer5.classList) // => Recupere toutes les classes de l'element du DOM avec id="container"
+
+myContainer5.classList.add("newClass"); // => Ajoute la classe newClass à l'element du DOM avec id="container"
+myContainer5.classList.remove("newClass"); // => Supprime la classe newClass à l'element du DOM avec id="container"
+myContainer5.classList.toggle("truc"); // => Ajoute la classe newClass à l'element du DOM avec id="container" si elle n'existe pas, sinon la supprime
+
+const ifContain = myContainer5.classList.contains("truc"); // => Verifie si l'element du DOM avec id="container" contient la classe newClass
+console.log(ifContain);
+```
+
+### Styles
+On évite de modifier le style directement dans le JavaScript => rend le code illisible et confus<br/>
+On garde HTML = Structure, CSS = Design, JS = Interactivité / et modification du HTML<br/>
+Le JS va modifier les classes CSS en effectuant des ajout / suppression de classes<br/>
+
+## Fonctions
+- Réutiliser du code avec des paramètres différentes => même code mais résultats différents => évite d'écrire X fois le même code
+Par exemple, pour une calculatrice, on va créer une fonction qui va additionner 2 nombres, on pas écrire 10 fois le même code pour 1 + 2, 1 + 3, ...
+- Améliorer la lisibilité du code => on va créer une fonction qui va s'appeler somme et qui va additionner 2 nombres, on va comprendre que la fonction somme va additionner ces 2 nombres
+On essaie de garder un code le maximum lisible en anglais
+- Améliorer la maintenabilité du code => si on a besoin de modifier le code, on va modifier la fonction et non pas les 10 lignes de code qui font la même chose
+### Déclaration d'une fonction
+```javascript
+
+// Fonctions classiques
+function myFunction() {
+    // Code à exécuter
+    console.log('Hello World');
+}
+
+// Fonctions fléchées
+const myFunction2 = () => {
+    // Code à exécuter
+    console.log('Hello World 2');
+}
+```
+
+### Appel d'une fonction
+```javascript
+myFunction(); // Hello World - Appel de la fonction myFunction - Attention, il faut toujours mettre les parenthèses même si la fonction ne prend pas de paramètres
+myFunction2(); // Hello World 2 - Appel de la fonction myFunction2
+```
+
+### Fonctions avec paramètres
+```javascript
+function myFunction3(a, b) {
+    // Code à exécuter
+    console.log(a + b);
+}
+
+// Les paramètres sont remplacés par les valeurs passées en paramètres dans le même ordre
+myFunction3(1, 2); // => Affiche 3 dans la console
+myFunction3(10, 20); // => Affiche 30 dans la console
+myFunction3(10, "Hello"); // => Affiche 10Hello dans la console car le + se transforme en concaténation si l'un des 2 paramètres est une chaîne de caractères
+```
+
+### Fonctions avec paramètres par défaut
+Attention, les paramètres optionnels doivent toujours être à la fin
+
+```javascript
+function myFunction4(a = 10, b = 20) {
+    console.log(a + b)
+}
+
+myFunction4(5); // => Affiche 25 dans la console car b = 20 par défaut
+myFunction4(); // => Affiche 30 dans la console car a = 10 et b = 20 par défaut
+```
+
+### Fonctions avec retour de valeur
+```javascript
+function myFunction5(a, b) {
+    return a + b;
+}
+
+const result = myFunction5(1, 2); 
+console.log(result);// => result = 3
+console.log(result);// => result = 3
+```
+
+```javascript
+// Même chose mais en version flechée
+const myFunction6 = (a, b) => {
+    return a + b;
+}
+```
+
+```javascript
+const myFunction7 = (a, b) => a + b; // => Même chose que la fonction au dessus, parce qu'il n'y a qu'une seule instruction, on peut l'écrire sur une seule ligne et automatiquement cela fais le return
+
+```
 
 ## Evénements
 
+```javascript
+const btnSave = document.getElementById("btnSave"); // => Recupere l'element du DOM avec id="btnSave"
+btnSave.addEventListener("click", () => {
+    console.log('click sur le bouton btnSave')
+}); // => Ajoute un listener sur le bouton btnSave qui ce declenche au click (existe d'autres actions, change, input, ...), en deuxième paramètre, on lui passe une fonction qui sera executée lorsque l'action sera déclenchée
+```
+
+Un événement soit être déclancher sur un noeud du DOM uniquement (par exemple, un bouton, un input, un lien, ...) et pas sur une liste, un tableau
+```javascript
+const btnOtherList = document.querySelectorAll(".btnOther"); // => Recupere tous les elements du DOM avec class="btnOther"
+for(let i = 0; i < btnOtherList.length; i++) {
+    btnOtherList[i].addEventListener("click", () => {
+        console.log(`click sur le bouton other n°${i}`)
+    });
+}
+```
 ## Classes
 
