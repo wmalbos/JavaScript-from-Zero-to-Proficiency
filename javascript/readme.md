@@ -642,7 +642,6 @@ setInterval(() => {
 
 ## Premières bonnes pratiques
 
-### Nomenclature
 #### Utiliser des noms de variables prononçables et explicites :
 ```javascript
 // Mauvais
