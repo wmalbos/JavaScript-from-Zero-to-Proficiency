@@ -314,6 +314,7 @@ Retrouvez ci-dessous les principales boucles natives en JavaScript. <br />
 ### for 
 La boucle `for` permet d'exécuter du code un nombre de fois défini à l'avance. <br />
 ```javascript
+// for(initialisation; condition d'arrêt; incrémentation) {
 for (let i = 0; i < 10; i++) {
     // code à exécuter
 }
@@ -322,22 +323,23 @@ Dans cette exemple, la boucle va s'exécuter 10 fois, i prendra les valeurs de 0
 
 ### while
 La boucle `while` permet d'exécuter du code tant qu'une condition est vraie. <br />
+Ne pas oublier d'incrémenter counter pour que à un moment donnée counter soit supérieur à 10 et que la boucle s'arrête. Cela évitera une boucle infinie
 ```javascript
-let counter = 0
-while (counter < 10) {
+let counter = 0; // initialisation
+while (counter < 10) { // condition d'arrêt
     // code à exécuter
-    counter++; // Ne pas oublier d'incrémenter counter pour que à un moment donnée counter soit supérieur à 10 et que la boucle s'arrête. Cela évitera une boucle infinie
+    counter++; // incrémentation
 }
 ```
 
 ### do ... while
 La boucle `do ... while` permet d'exécuter du code au moins une fois et tant qu'une condition est vraie. <br />
 ```javascript
-let counter = 0;
+let counter = 0; // initialisation
 do {
     // code à exécuter
-    counter++; // Ne pas oublier d'incrémenter counter pour que à un moment donnée counter soit supérieur à 10 et que la boucle s'arrête. Cela évitera une boucle infinie
-} while (counter < 10);
+    counter++; // incrémentation
+} while (counter < 10); // condition d'arrêt
 ```
 
 ## Objets
