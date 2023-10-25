@@ -1,9 +1,20 @@
 # JavaScript
 
 ## Sommaire
-1. [Commentaires](#commentaires)
-2. [Variables](#variables)
-3. [Types de données](#types-de-données)
+1. [Introduction](#introduction)
+2. [Commentaires](#commentaires)
+3. [Variables](#variables)
+4. [Types de données](#types-de-données)
+5. [Opérateurs](#opérateurs)
+6. [Conditions](#conditions)
+7. [Objets](#objets)
+8. [Tableaux](#tableaux)
+9. [Boucles](#boucles)
+10. [Fonctions](#fonctions)
+11. [Manipulation du DOM](#dom)
+12. [Evénements](#événements)
+13. [Classes](#classes)
+
 
 ## Introduction
 `JavaScript` -> Langage de programmation<br/>
@@ -235,11 +246,19 @@ L'opérateur logique `!` permet d'inverser le résultat d'une condition. <br />
 ```
 
 #### Opérateurs de concaténation
+L'opérateur de concaténation `+` permet de concaténer deux chaînes de caractères. <br />
+Attention a bien utiliser des espaces pour séparer les mots. <br />
 ```javascript
+"Hello" + "World" // "HelloWorld"
+"Hello " + "World" // "Hello World"
+"Hello" + " " + "World" // "Hello World"
 ```
 
 ### Conditions
+Les conditions permettent d'exécuter du code uniquement si une condition est vraie, c'est le début des algorithmes. <br />
+Une condition doit toujours être une expression qui retourne un booléen. <br />
 #### if ...
+La condition `if` permet d'exécuter du code uniquement si la condition est vraie. <br />
 ```javascript
 if(condition) {
     // code à exécuter si la condition est vraie
@@ -248,6 +267,7 @@ if(condition) {
 ```
 
 #### if ... else
+La condition `if ... else` permet d'exécuter du code si la condition est vraie et un autre code si la condition est fausse. <br />
 ```javascript
 if(condition) {
     // code à exécuter si la condition est vraie
@@ -258,18 +278,21 @@ if(condition) {
 ```
 
 #### if ... else if 
+La condition `if ... else if` permet d'exécuter du code si la condition n°1 est vraie, un autre code si la condition n°2 est vrai et un autre code si les deux conditions sont fausses.<br />
 ```javascript
-if(condition) {
-    // code à exécuter si la condition est vraie
-} else if (condition2) {
-    // code à exécuter si la condition est vraie
+if(condition_1) {
+    // code à exécuter si la condition_1 est vraie
+} else if (condition_2) {
+    // code à exécuter si la condition_2 est vraie
 } else {
-    // code à exécuter si la condition est fausse
+    // code à exécuter si la condition_1 et la condition_2 sont fausses
 }
 // code à exécuter dans tous les cas
 ```
 
 #### switch ...
+La condition `switch` permet d'exécuter du code en fonction de la valeur d'une variable. On peux rajouter autant de `case`que nécessaire. <br />
+Cette structure permet d'améliorer la lisibilité du code lorsque l'on a beaucoup de conditions.<br />
 ```javascript
 switch (variable) {
     case 1:
