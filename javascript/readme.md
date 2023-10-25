@@ -18,7 +18,7 @@
 15. [Classes](#classes)
 16. [Méthodes diverses](#méthodes-diverses)
 17. [Premières bonnes pratiques](#premières-bonnes-pratiques)
-18. [Nomenclature](#nomenclature)
+18. [Resources](#resources)
 
 
 
