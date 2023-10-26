@@ -23,9 +23,15 @@
 - `REACT NATIVE`
     - [Cheat Sheet](./react_native/readme.md)
     - [Exercices](./react_native/exercices/readme.md)
-- `NODEJS`
+- `VUE.JS`
+  - [Cheat Sheet](./vuejs/readme.md)
+  - [Exercices](./vuejs/exercices/readme.md)
+- `NODE.JS`
   - [Cheat Sheet](./nodejs/readme.md)
   - [Exercices](./nodejs/exercices/readme.md)
+- `ELECTRON.JS`
+  - [Cheat Sheet](./electronjs/readme.md)
+  - [Exercices](./electronjs/exercices/readme.md)
 - `PHP` - Hypertext Preprocessor
   - [Cheat Sheet](./php/readme.md)
   - [Exercices](./php/exercices/readme.md)
@@ -33,7 +39,7 @@
   - [Cheat Sheet](./symfony/readme.md)
   - [Exercices](./symfony/exercices/readme.md)
 - `WORDPRESS`
-    - [Cheat Sheet](./wordpress/readme.md) 
+    - [Cheat Sheet](./wordpress/readme.md) - Création de thèmes
 - `PYTHON`
   - [Cheat Sheet](./python/readme.md) - Python
   - [Cheat Sheet](./python/pygame/readme.md) - PyGame
