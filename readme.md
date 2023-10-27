@@ -1,8 +1,8 @@
 # Cheat Sheet et exerices
 
 ## En cours de rédaction
-- `JS` - JavaScript
-  - [Cheat Sheet](./javascript/readme.md) - JavaScript
+- `JAVASCRIPT`
+  - [Cheat Sheet](./javascript/readme.md)
   - [Exercices](./javascript/exercices/readme.md)
  
 ## Bientôt
