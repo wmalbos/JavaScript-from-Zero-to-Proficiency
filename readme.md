@@ -1,6 +1,11 @@
 # Cheat Sheet et exerices
 
-## Sommaire
+## En cours de rédaction
+- `JS` - JavaScript
+  - [Cheat Sheet](./javascript/readme.md) - JavaScript
+  - [Exercices](./javascript/exercices/readme.md)
+ 
+## Bientôt
 - `HTML` - HyperText Markup Language
   - [Cheat Sheet](./html/readme.md)
   - [Exercices](./html/exercices/readme.md)
@@ -11,7 +16,6 @@
   - [Cheat Sheet](./sass/readme.md)
   - [Exercices](./sass/exercices/readme.md)
 - `JS` - JavaScript
-  - [Cheat Sheet](./javascript/readme.md) - JavaScript
   - [Cheat Sheet](./javascript/phaser/readme.md) - Phaser.js
   - [Exercices](./javascript/exercices/readme.md)
 - `TYPESCRIPT`
